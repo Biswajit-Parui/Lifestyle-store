@@ -1,0 +1,98 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Singup Page</title>
+        
+        <style>
+            #footer{
+                padding: 10px 0;
+                background-color: #101010;
+                color:#9d9d9d;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Lifestyle Store</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><br><br><br><br>
+        
+        <div class="container-fluid decor_bg" id="content">
+            <div class="row">
+                <div class="container">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+                        <center>
+                            <h2>SIGN UP</h2>
+                            
+                            <from action="signup_script.html" method="POST">
+                            
+                            <div class="from-group">
+                                <input class="from-control" placeholder="Name" name="name" required>
+                            </div><br>
+                            
+                            <div class="from-group">
+                                <input type="email" class="from-control" placeholder="Email" name="e-mail" required>
+                            </div><br>
+                            
+                            <div class="from-group">
+                                <input type="password" class="from-control" placeholder="Password" name="password" required>
+                            </div><br>
+                            
+                            <div class="from-group">
+                                <input type="text" class="from-control" placeholder="Contact" name="contact" required>
+                            </div><br>
+                            
+                            <div class="from-group">
+                                <input type="text" class="from-control" placeholder="City" name="city" required>
+                            </div><br>
+                            
+                            <div class="from-group">
+                                <input type="text" class="from-control" placeholder="Address" name="address" required>
+                            </div><br>
+                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>   
+                        </from>
+                        </center>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        
+        <footer>
+
+            <div class="container">
+                
+                <center>
+                    <div id="footer">
+                        <footer>Copyright © Lifestyle Store. All Rights Reserved” and “Contact Us: +91 90000 00000</footer>
+                    </div>
+                </center>
+            </div>
+            
+        </footer>
+        
+    </body>
+</html>
